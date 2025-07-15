@@ -12,16 +12,19 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body class="Lexend mx-1 lg:mx-auto">
     <section class="bg-[#F7F5F0] w-full">
         <div class="lg:max-w-[1140px] mx-auto px-4">
+            <!-- nav options -->
             <nav class="py-6">
                 <div class="flex flex-col space-y-4 lg:flex-row lg:justify-between lg:items-center lg:space-y-0">
                     <!-- button -->
                     <button
-                        class="btn btn-primary bg-[#B4F461] text-black py-3 px-8 text-xl font-bold border-none shadow-none max-w-36 h-[49px] mx-auto lg:mx-0">Blog</button>
+                        class="btn btn-primary greenBtn text-black py-3 px-8 text-xl font-bold border-none shadow-none max-w-36 h-[49px] mx-auto lg:mx-0">Blog</button>
                     <!-- logo -->
                     <div class="flex items-center space-x-2 justify-center mx-4 lg:mx-0">
                         <img src="assets/logo.png" alt="">
@@ -31,7 +34,7 @@
                     <div class="flex items-center space-x-2 justify-center">
                         <img src="assets/coin.png" alt="">
                         <div class="flex text-xl font-bold space-x-2">
-                            <h2>5500</h2>
+                            <h2 id="balance">5500</h2>
                             <h2>BDT</h2>
                         </div>
                     </div>
@@ -42,10 +45,10 @@
     <section class="mt-4 lg:my-8 lg:max-w-[1140px] mx-auto">
         <!-- buttons -->
         <div class="flex justify-center mx-10 lg:mx-0 lg:gap-8">
-            <button
-                class="btn btn-primary bg-[#B4F461] text-black py-3 px-8 text-xl font-bold border-none shadow-none max-w-36 h-[49px] mx-auto lg:mx-0">Donation</button>
-            <button
-                class="btn btn-primary bg-[#B4F461] text-black py-3 px-8 text-xl font-bold border-none shadow-none max-w-36 h-[49px] mx-auto lg:mx-0">History</button>
+            <button id="donation-btn"
+                class="btn btn-primary border greenBtn bg-[#ffffff] text-black py-3 px-8 text-xl font-bold shadow-none max-w-36 h-[49px] mx-auto lg:mx-0">Donation</button>
+            <button id="history-btn"
+                class="btn btn-primary bg-[#ffffff] text-black py-3 px-8 text-xl font-bold shadow-none max-w-36 h-[49px] mx-auto lg:mx-0">History</button>
         </div>
     </section>
     <!-- cards -->
@@ -60,7 +63,10 @@
                 <div
                     class="flex items-center text-lg font-semibold gap-2 bg-[rgba(17,17,17,0.05)] max-w-max rounded-md p-3">
                     <button><img src="assets/coin.png" alt=""></button>
-                    <p class="text-gray-500">0 BDT</p>
+                    <div class="text-gray-500 flex gap-1">
+                        <p>0</p>
+                        <p>BTD</p>
+                    </div>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
@@ -71,9 +77,9 @@
                         and making a positive impact on the lives of those in need.</p>
                 </div>
                 <div class="flex flex-col gap-4">
-                    <input class="px-5 py-5 border-[rgba(17,17,17,0.1)] rounded-md" type="text" name="Donation" id=""
+                    <input id="donation-input" class="px-5 py-5 border-[rgba(17,17,17,0.1)] rounded-md" type="text" name="Donation" id=""
                         placeholder="Donation Amount">
-                    <button
+                    <button id="btn-donation-noakhali"
                         class="btn btn-primary bg-[#B4F461] text-black text-xl font-bold border-none shadow-none py-8">Donate
                         Now</button>
                 </div>
@@ -91,7 +97,10 @@
                 <div
                     class="flex items-center text-lg font-semibold gap-2 bg-[rgba(17,17,17,0.05)] max-w-max rounded-md p-3">
                     <button><img src="assets/coin.png" alt=""></button>
-                    <p class="text-gray-500">600 BDT</p>
+                    <div class="text-gray-500 flex gap-1">
+                        <p>600</p>
+                        <p>BTD</p>
+                    </div>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h3>
@@ -125,7 +134,10 @@
                 <div
                     class="flex items-center text-lg font-semibold gap-2 bg-[rgba(17,17,17,0.05)] max-w-max rounded-md p-3">
                     <button><img src="assets/coin.png" alt=""></button>
-                    <p class="text-gray-500">2400 BDT</p>
+                    <div class="text-gray-500 flex gap-1">
+                        <p>2400</p>
+                        <p>BTD</p>
+                    </div>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold">Aid for Injured in the Quota Movement</h3>
@@ -147,6 +159,8 @@
         </div>
     </section>
     <br>
+    <script src="js/clickButton.js"></script>
+    <script src="js/utilities.js"></script>
 </body>
 
 </html>
