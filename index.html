@@ -34,7 +34,7 @@
                     <div class="flex items-center space-x-2 justify-center">
                         <img src="assets/coin.png" alt="">
                         <div class="flex text-xl font-bold space-x-2">
-                            <h2 id="balance">5500</h2>
+                            <h2 id="balance">10500</h2>
                             <h2>BDT</h2>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                     class="flex items-center text-lg font-semibold gap-2 bg-[rgba(17,17,17,0.05)] max-w-max rounded-md p-3">
                     <button><img src="assets/coin.png" alt=""></button>
                     <div class="text-gray-500 flex gap-1">
-                        <p>0</p>
+                        <p id="noakhali-balance">0</p>
                         <p>BTD</p>
                     </div>
                 </div>
@@ -77,8 +77,8 @@
                         and making a positive impact on the lives of those in need.</p>
                 </div>
                 <div class="flex flex-col gap-4">
-                    <input id="donation-input" class="px-5 py-5 border-[rgba(17,17,17,0.1)] rounded-md" type="text" name="Donation" id=""
-                        placeholder="Donation Amount">
+                    <input id="donation-input-noakhali" class="px-5 py-5 border-[rgba(17,17,17,0.1)] rounded-md"
+                        type="text" name="Donation" id="" placeholder="Donation Amount">
                     <button id="btn-donation-noakhali"
                         class="btn btn-primary bg-[#B4F461] text-black text-xl font-bold border-none shadow-none py-8">Donate
                         Now</button>
@@ -98,7 +98,7 @@
                     class="flex items-center text-lg font-semibold gap-2 bg-[rgba(17,17,17,0.05)] max-w-max rounded-md p-3">
                     <button><img src="assets/coin.png" alt=""></button>
                     <div class="text-gray-500 flex gap-1">
-                        <p>600</p>
+                        <p id="feni-balance">600</p>
                         <p>BTD</p>
                     </div>
                 </div>
@@ -112,9 +112,9 @@
                         today to assist those in urgent need.</p>
                 </div>
                 <div class="flex flex-col gap-4">
-                    <input class="px-5 py-5 border-[rgba(17,17,17,0.1)] rounded-md" type="text" name="Donation" id=""
-                        placeholder="Donation Amount">
-                    <button
+                    <input id="donation-input-feni" class="px-5 py-5 border-[rgba(17,17,17,0.1)] rounded-md"
+                        type="text" name="Donation" id="" placeholder="Donation Amount">
+                    <button id="btn-donation-feni"
                         class="btn btn-primary bg-[#B4F461] text-black text-xl font-bold border-none shadow-none py-8">Donate
                         Now</button>
                 </div>
@@ -135,7 +135,7 @@
                     class="flex items-center text-lg font-semibold gap-2 bg-[rgba(17,17,17,0.05)] max-w-max rounded-md p-3">
                     <button><img src="assets/coin.png" alt=""></button>
                     <div class="text-gray-500 flex gap-1">
-                        <p>2400</p>
+                        <p id="third-balance">2400</p>
                         <p>BTD</p>
                     </div>
                 </div>
@@ -149,9 +149,9 @@
                         time of need.</p>
                 </div>
                 <div class="flex flex-col gap-4">
-                    <input class="px-5 py-5 border-[rgba(17,17,17,0.1)] rounded-md" type="text" name="Donation" id=""
+                    <input id="donate-input-third" class="px-5 py-5 border-[rgba(17,17,17,0.1)] rounded-md" type="text" name="Donation" id=""
                         placeholder="Donation Amount">
-                    <button
+                    <button id="donate-btn-third"
                         class="btn btn-primary bg-[#B4F461] text-black text-xl font-bold border-none shadow-none py-8">Donate
                         Now</button>
                 </div>
@@ -161,6 +161,8 @@
     <br>
     <script src="js/clickButton.js"></script>
     <script src="js/utilities.js"></script>
+    <script src="js/donateMoney.js"></script>
+    <script src="js/feni.js"></script>
 </body>
 
 </html>
